@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratham | Digital Marketing Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="sticky-header">
+    <nav>
+      <div class="logo">Pratham DM</div>
+      <ul class="nav-links">
+        <li><a href="#about">Home</a></li>
+        <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <canvas id="three-canvas"></canvas>
+    <div class="hero-content">
+      <h1>Welcome to Pratham's Digital Marketing Portfolio</h1>
+      <p>Expert in SEO, Campaign Strategy & Digital Growth</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">About Me</div>
+    <div class="about-container">
+      <img src="assets/pratham-photo.jpg" alt="Pratham Photo" class="about-photo" />
+      <div class="about-text">
+        <h2>Hi, I'm Pratham</h2>
+        <p>
+          A passionate digital marketer with a track record of executing high-impact campaigns.
+          I specialize in SEO, PPC, content strategy, and social media marketing. My goal is to help brands grow
+          online with creative and data-driven solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="section-title">My Projects</div>
+    <div class="project-grid">
+      <!-- Placeholder for 11 PDF projects -->
+      <script>
+        for (let i = 1; i <= 11; i++) {
+          document.write(`
+            <div class="project-card">
+              <embed src="assets/project${i}.pdf" type="application/pdf" />
+              <p>Project ${i}</p>
+            </div>
+          `);
+        }
+      </script>
+    </div>
+    <div class="nav-buttons">
+      <a href="#about" class="btn">Back</a>
+      <a href="#home" class="btn">Home</a>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="section-title">Certificates</div>
+    <div class="certificates-grid">
+      <!-- Example with placeholder PNGs -->
+      <img src="assets/certificate1.png" alt="Certificate 1" />
+      <img src="assets/certificate2.png" alt="Certificate 2" />
+      <img src="assets/certificate3.png" alt="Certificate 3" />
+      <!-- Add more as needed -->
+    </div>
+    <div class="nav-buttons">
+      <a href="#about" class="btn">Back</a>
+      <a href="#home" class="btn">Home</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-title">My Skills</div>
+    <div class="skills-container">
+      <!-- Example of collapsible skill boxes -->
+      <div class="skill-box">
+        <button class="skill-title">SEO Strategy</button>
+        <div class="skill-content">
+          <p>
+            I specialize in on-page and off-page SEO, keyword research, competitor analysis, and link building. I’ve helped multiple brands improve search visibility and organic traffic using structured, white-hat techniques that comply with Google's latest updates. My approach ensures long-term growth and measurable ROI.
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-box">
+        <button class="skill-title">Google Ads</button>
+        <div class="skill-content">
+          <p>
+            Certified in Google Ads, I create and manage high-performing campaigns that maximize ROI through A/B testing, audience segmentation, and real-time optimization.
+          </p>
+        </div>
+      </div>
+
+      <!-- Repeat for up to 15 skills -->
+    </div>
+
+    <div class="nav-buttons">
+      <a href="#about" class="btn">Back</a>
+      <a href="#home" class="btn">Home</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Contact Me</div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="contact-links">
+      <a href="mailto:pratham@example.com">Email</a>
+      <a href="tel:+911234567890">Phone</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-buttons">
+      <a href="#portfolio" class="btn">Projects</a>
+      <a href="#certificates" class="btn">Certificates</a>
+      <a href="#skills" class="btn">Skills</a>
+    </div>
+    <p>&copy; 2025 Pratham Digital Marketing</p>
+  </footer>
+</body>
+</html>
